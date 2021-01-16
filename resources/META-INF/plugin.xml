@@ -1,0 +1,42 @@
+<idea-plugin>
+  <id>com.garawaa.unique.plugin.id</id>
+  <name>AES_Plugin</name>
+  <version>0.1</version>
+  <vendor email="garawaa@gmail.com" url="https://github.com/garawaa">My Github</vendor>
+
+  <description><![CDATA[
+    You may be used eclipse ide for android development early. And you may remember android eclipse snippets.
+    Now these snippets come to android studio and as well as intellij ide<br>
+    Install this plugin reopen your ide and in your java code type something like aes_... or just click ctrl+j.
+    caution: some codes do not work for latest android versions.
+    <em>android eclipse snippets java code live templates</em>
+    ]]></description>
+
+  <change-notes><![CDATA[
+      First release.<br>
+      <em>android eclipse snippets java code live templates plugin</em>
+    ]]>
+  </change-notes>
+
+
+  <idea-version since-build="143.0"/>
+
+  <!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+       on how to target different products -->
+
+  <depends>com.intellij.modules.java</depends>
+
+
+  <extensions defaultExtensionNs="com.intellij">
+    <!-- Add your extensions here -->
+        <defaultLiveTemplatesProvider implementation="com.garawaa.TemplateProvider"/>
+        <liveTemplateContext implementation="com.garawaa.TemplateContext"/>
+
+
+  </extensions>
+
+  <actions>
+    <!-- Add your actions here -->
+  </actions>
+
+</idea-plugin>
